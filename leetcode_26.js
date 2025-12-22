@@ -1,15 +1,18 @@
 //26. Remove Duplicates from Sorted Array
 
 var removeDuplicates = function(nums) {
-    let arr = Array.from(new Set(nums));
-    for(let i = 0; i < arr.length; i++)
-    {
-        nums[i] = arr[i];
+    
+    let unique = Array.from(new Set(nums));
+
+    for (let i = 0; i < unique.length; i++) {
+        nums[i] = unique[i];
     }
-    return nums.length
+    
+    return unique.length; 
 };
-//console.log(removeDuplicates([1,1,2]));
+
+
 let arr = [1,1,2];
 let len = removeDuplicates(arr);
-let result = arr.slice(0,len);
-return result;
+console.log(len); 
+console.log(arr.slice(0,len));
