@@ -1,6 +1,6 @@
 //349. Intersection of Two Arrays
 
-var intersect = function(nums1, nums2) {
+var intersection = function(nums1, nums2) {
     class HashMap{
         constructor(){
             this.map = new Map();
@@ -34,5 +34,5 @@ var intersect = function(nums1, nums2) {
     return result;
 };
 
-console.log(intersect([1,2,2,1],[2,2]));
-console.log(intersect([4,9,5],[9,4,9,8,4]));
+console.log(intersection([1,2,2,1],[2,2]));
+console.log(intersection([4,9,5],[9,4,9,8,4]));
